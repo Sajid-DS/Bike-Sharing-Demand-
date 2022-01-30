@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;
+      text-align: center;
+      padding: 10px;
+      font-size:30x;
+      
+     }
+					
+ #Hour{
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            padding: 0px;
+            text-align: center;
+        }
+        
+        #Temperature(�C) {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            padding: 0px;
+            text-align: center;
+        }
+        
+        #Humidity(%) {
+             padding: 0px;
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #Wind speed (m/s) {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+             padding: 0px;
+        }
+
+
+ #Visibility (10m) {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+             padding: 0px;
+        }
+        
+			
+        #Dew point temperature(�C) {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #Solar Radiation (MJ/m2) {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #Rainfall(mm) {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+          padding: 0px;
+         text-align: center;
+        }
+
+ #Snowfall (cm){
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+           padding: 0px;
+        }
+        		
+
+        #Seasons {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            padding: 0px; 
+           text-align: center;
+        }
+        
+        #Functioning Day {
+            border-radius: 14px;
+            height: 25px;
+             padding: 0px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #IsHoliday {
+            border-radius: 14px;
+            height: 25px;
+            padding: 0px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+ #submit {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            padding: 5px;
+        }
+				
+
+</style>
+</head>
+<body>
+<h2 style="font-size":20x;>Bike Sharing Demand Prediction </h2>
+<div>
+<form action="/result" method="POST">
+<label for="Hour">Enter Hour</label>
+<input type="text" id="Hour" name="Hour">
+<br>
+<label for="Temperature(�C)">Enter Tempreture</label>
+<input type="text" id="Temperature(�C)" name="Temperature(�C)">
+<br>
+
+<label for="Humidity(%)">Enter Humidity</label>
+<input type="text" id="Humidity(%)" name="Humidity(%)">
+<br>
+<label for="Wind speed (m/s)">Wind Speed</label>
+<input type="text" id="Wind speed (m/s)" name="Wind speed (m/s)">
+<br>
+<label for="Visibility (10m)">Visibility</label>
+<input type="text" id="Visibility (10m)" name="Visibility (10m)">
+<br>
+<label for="Dew point temperature(�C)">Dew Point Tempreture</label>
+<input type="text" id="Dew point temperature(�C)" name="Dew point temperature(�C)">
+<br>
+<label for="Solar Radiation (MJ/m2)">Solar Radiation</label>
+<input type="text" id="Solar Radiation (MJ/m2)" name="Solar Radiation (MJ/m2)">
+<br>
+<label for="Rainfall(mm)">Rainfall</label>
+<input type="text" id="Rainfall(mm)" name="Rainfall(mm)">
+<br>
+<label for="Snowfall (cm)">Snowfall</label>
+<input type="text" id="Snowfall (cm)" name="Snowfall (cm)">
+<br>
+<label for="Seasons">Enter 1=Winter,2=Spring,3=Autumn,4=Summer</label>
+<input type="text" id="Seasons" name="Seasons">
+<br>
+<label for="Functioning Day">Enter Functioning Day 1 if yes or 0 if No</label>
+<input type="text" id="Functioning Day" name="Functioning Day">
+<br>
+<label for="IsHoliday">Enter Holiday 1 if yes or 0 if No</label>
+<input type="text" id="IsHoliday" name="IsHoliday">
+<br>
+
+
+<input id="submit" type="submit" value="Submit">
+<br>
+{{ prediction }}
+
+</form>
+</div>
+</body>
+</html>
